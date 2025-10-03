@@ -3,11 +3,131 @@ let reversed = "";
 for(let i=string.length-1; i>=0; i--){
     reversed+=string[i];
     if(reversed===string){
-        console.log("this is palindrome");
+        console.log("this is palindrome.");
 
     }
     else{
-        console.log("this is not palindrome", reversed);;
+        console.log("this is not palindrome",reversed)
     }
 }
 console.log("this is reverse", string);
+//the second problem
+let mango = 10;
+let apple = 5;
+console.log(mango+apple); 
+// You are given marks = 33. How do you check if a student has passed or failed (passing marks = 40)?
+//we uisng condition
+let marks =prompt("enter your number:");
+
+let mark = parseInt(marks);
+if(marks>40){
+    console.log("you are passed");
+
+}
+else if(marks<40){
+    console.log("you are fail")
+
+}
+else{
+   console.log("you are best in studies tryagain for nxt time.");  
+}
+// Variable x = 8. How do you decide if it is even or odd?
+let x1 = prompt("enter your choice number:")
+
+let x = parseInt(x1);
+if(x%2==0){
+    console.log("this is  even");
+}
+else if(x%2==1){
+    console.log("this is odd");
+}
+else{
+    console.log("try again");
+}
+//You have two numbers, a = 10 and b = 15. Which is greater?
+let a =10;
+let b =15;
+
+if(a>b){
+    console.log("the a is greater than b.");
+
+}
+else if(b>a){
+    console.log("the b is greater than a.");
+}
+else{
+    console.log("the a and b are equal.");
+}
+//You have two numbers, p = 12, q = 12. How do you check if they are equal or not?
+let p = 12;
+let q = 12;
+if(p==q){
+    console.log("the p and q are equal equal.");
+
+}
+else{
+    console.log("they are not equal.");
+}
+// You are given temperature = 42. How do you check if it is hot or cold? (Assume above 30 = hot).
+
+let temp = 42;
+if(temp>30){
+    console.log("the temp is above the 30 to open the AC.");
+}
+else{
+    console.log("the AC are stop because the tempertaure is low.");
+}
+// You have wallet = 500. Price of a burger is 300. Can you buy it?
+
+let wallet = parseInt(prompt("what your budget?"));
+let price_burger = parseInt(prompt("what is the burger price?"));
+if(wallet>=500 && price_burger<=300){
+    console.log("you can buy it");
+
+}
+else{
+    console.log("you are not buy it because your budgets is low or end");
+}
+
+// A shopkeeper has oranges = 50. A customer buys 20. How many are left?
+let shopkeeper_oranges = 50;
+let customer_buys = 20;
+
+// map method and filter and for each
+
+let array = [123,24,54,4234];
+
+let arr = array.map(x=> x*x)
+
+console.log(arr);
+//filter
+let array32 = [12,44,43,5546,332];
+
+let arr23 = array32.filter((a => a>130)
+)
+console.log(arr23);
+//reduce
+
+let redoce = [233,34,21,12];
+let arrr = redoce.reduce(()=>{
+    return 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// A student has scored marks = 92. Is it grade A (>90) or not?
