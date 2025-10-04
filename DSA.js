@@ -57,6 +57,7 @@ else if(b>a){
 }
 else{
     console.log("the a and b are equal.");
+
 }
 //You have two numbers, p = 12, q = 12. How do you check if they are equal or not?
 let p = 12;
@@ -92,42 +93,32 @@ else{
 // A shopkeeper has oranges = 50. A customer buys 20. How many are left?
 let shopkeeper_oranges = 50;
 let customer_buys = 20;
+console.log("we used the - operator", shopkeeper_oranges-customer_buys);
 
 // map method and filter and for each
 
-let array = [123,24,54,4234];
+// let array = [123,24,54,4234];
 
-let arr = array.map(x=> x*x)
+// let arr = array.map(x=> x*x)
+// /
+// console.log(arr);
+// //filter
+// let array32 = [12,44,43,5546,332];
 
-console.log(arr);
-//filter
-let array32 = [12,44,43,5546,332];
-
-let arr23 = array32.filter((a => a>130)
-)
-console.log(arr23);
-//reduce
-
-let redoce = [233,34,21,12];
-let arrr = redoce.reduce(()=>{
-    return 
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let arr23 = array32.filter((a => a>130)
+// )
+// console.log(arr23);
 
 // A student has scored marks = 92. Is it grade A (>90) or not?
+
+let student_marks = prompt("enter your number:");
+
+if(student_marks>90){
+    console.log("they grade A");
+}
+else if(student_marks==80 || student_marks>70){
+    console.log("the grade B");
+}
+else{
+    console.log("the grade c and D");
+}
