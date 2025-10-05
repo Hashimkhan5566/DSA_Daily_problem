@@ -122,3 +122,28 @@ else if(student_marks==80 || student_marks>70){
 else{
     console.log("the grade c and D");
 }
+//You have three numbers: 10, 20, 30. Which is the largest?
+
+let largest  = Math.max(10,30,20);
+console.log("the largest number", largest);
+
+//you have three number: 10,20,30. which is the largest?
+
+let a1 = 10;
+let b1 = 20;
+let c1 = 30;
+
+if(a1>b1){
+    console.log("this is largest number:",a1);
+}
+else if(b1>c1){
+    console.log("this is largest number:",b1);
+}
+else if(c1>a1){
+    console.log("this is largest number:",c1);
+}
+else{
+    console.log("this is greater.");
+}
+
+
