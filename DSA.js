@@ -144,6 +144,41 @@ else if(c1>a1){
 }
 else{
     console.log("this is greater.");
+
+
 }
+//You have n = 1234. How many digits does it have?
+// let number  = [1234];
+// let count = 0;
+// for(let num of number){
+//     count+=num;
+//     count++;
+// }
+// console.log("this is number of num that is contain.", count);
+// console.log("this is the count", num);
+
+///You have n = 1234. How many digits does it have?
+let nom = 1234;
+let str = nom.toString();
+console.log(str.length);
+
+// A bus has 40 seats. 35 are filled. Is the bus full, empty, or has seats left?
+let bus_seats = prompt("enter the bus seats:");
+let full_seats = prompt("enter the full seats:");
 
 
+let total  = parseInt(bus_seats);
+let filled = parseInt(full_seats);
+if(filled===total){
+    console.log("the seats is full;");
+
+}
+else if(total==0){
+    console.log("the seats is empty");
+}
+else if(filled<total){
+    console.log("the reamin seats in bus:",total-filled);
+}
+else{
+    console.log("the bus starts");
+}
