@@ -182,3 +182,21 @@ else if(filled<total){
 else{
     console.log("the bus starts");
 }
+// A student scores: Math = 60, Science = 70, English = 80. How do you calculate the average marks and check grade?
+let students = {
+    math:60,
+    english :80,
+    science : 70
+}
+    let sum = students.math+students.english+students.science;
+    marks=sum/3;
+    if(marks>=90){
+        console.log("gradeA");
+    }
+    else if(marks==80){
+        console.log("grade B");
+    }
+    else{
+        console.log("other grade");
+    }
+console.log(marks);
