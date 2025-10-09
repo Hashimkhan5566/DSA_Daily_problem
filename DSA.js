@@ -200,3 +200,24 @@ let students = {
         console.log("other grade");
     }
 console.log(marks);
+// You have n = 7. How do you print the first 7 multiples of it (7, 14, 21 …)?
+let multiply = prompt('enter your choice number');
+let table = parseInt(multiply);
+for(i=1; i<=7; i++){
+    console.log(`7X${i}: ${7*i}`);
+}
+// You are given a number n = 28. How do you check if it is a perfect number?
+let num = 10;
+let sam = 0;
+for(i =1; i<num; i++){
+    if(num%i==0){
+        sam+=i;
+    }
+
+}
+if(sam==num){
+    console.log("this is perfect");
+}
+else{
+    console.log("this is not perfect");
+}
