@@ -221,3 +221,77 @@ if(sam==num){
 else{
     console.log("this is not perfect");
 }
+// Take a number n. Print all numbers from 1 to n.
+
+// Print all even numbers between 1 and 50.
+
+// Find the sum of the first 10 natural numbers.
+
+// Given a number n, print its multiplication table (till 10).
+
+// Find the factorial of a number n.
+
+// Count how many digits are in a given number.
+
+// Find the sum of digits of a number.
+
+// Reverse a number (e.g., 123 → 321).
+
+// Check if a number is positive, negative, or zero.
+
+// Find the largest of three numbers.
+let n = 23;
+for(i=0; i<=23; i++)
+{
+    console.log(i);
+}
+//2
+for(let j=0; j<=50; j++){
+    if(j%2==0){
+        console.log(j);
+    }
+}
+//3
+for(let n=1; n<=10; n++ )
+{
+    console.log(n);
+}
+
+//4
+let mul = prompt("enter your choice mul number:");
+let mul12 = parseInt(mul);
+for(i=1; i<=10; i++){
+    console.log(`${mul12}X${i} : ${mul12*i}`);
+}
+
+//5 
+let number = prompt("enter your choice number:");
+let namber = parseInt(number);
+
+let fact = 1;
+while(namber>0){
+
+    fact*=namber;
+    namber--;
+}
+console.log("the factorial", fact);
+let digit = 12345;
+let stri = digit.toString();
+console.log(stri.length);
+
+//6
+let nomber = 23;
+let nomber2 = 45;
+let nomber3 = 56;
+
+if(nomber>nomber2){
+    console.log(nomber);
+}
+else if(nomber2>nomber3){
+    console.log(nomber1);
+}
+else if(nomber3>nomber){
+    console.log(nomber3);
+}
+
+console.log(Math.max(nomber, nomber2, nomber3));
