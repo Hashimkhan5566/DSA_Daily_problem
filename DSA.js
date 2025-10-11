@@ -295,3 +295,64 @@ else if(nomber3>nomber){
 }
 
 console.log(Math.max(nomber, nomber2, nomber3));
+
+//Reverse a number (e.g., 123 → 321).
+let nam  = 123;
+let original = nam;
+let reverse = 0;
+while(nam>0){
+   let digit =  nam%10;
+   reverse = reverse*10+digit;
+   nam = Math.floor(nam/10);
+}
+console.log("this reverse:",reverse);
+console.log(original==reverse);
+
+//🟠 Intermediate Level (Condition + Loop + Math)
+
+// Check if a number is a prime number.
+
+// Find all factors of a number n.
+
+// Check if a number is Armstrong (sum of cubes of digits = number).
+
+// Check if a number is Perfect Number (sum of divisors = number).
+
+// Print the Fibonacci series up to n terms.
+
+// Find the greatest common divisor (GCD) of two numbers.
+
+// Find the least common multiple (LCM) of two numbers.
+
+// Count how many even and odd digits are in a number.
+
+// Find the power of a number (a^b) without using the power operator.
+
+// Calculate the average of n numbers entered by the user.
+//\\//\\\\\\\\\\||||||||||||\\\\\||||||///////|||||||||||\
+
+// Check if a number is a prime number.
+let numbeer  = prompt("enter your prime number:");
+
+let isprime = true;
+if(numbeer<=1){
+    isprime = false;
+}
+else{
+    for(let i=2; i<=Math.sqrt(number); i++){
+        isprime = false;
+        if(number%i==0){
+            isprime = false;
+            break;
+            
+        }
+    }
+
+}
+if(isprime){
+    console.log(numbeer, "this is prime");
+
+}
+else{
+    console.log(numbeer, "this is not prime number");
+}
