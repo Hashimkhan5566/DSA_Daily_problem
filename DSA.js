@@ -356,3 +356,20 @@ if(isprime){
 else{
     console.log(numbeer, "this is not prime number");
 }
+// Check if a number is Armstrong (sum of cubes of digits = number).
+let cubic  = prompt("enter your choice armstrong:");
+let nams = parseInt(cubic);
+let originaal = cubic;
+
+let suum = 0;
+while(cubic>0){
+    let digit = cubic%10;
+    suum+=digit**3; 
+    cubic = Math.floor(cubic/10);
+}
+if(suum===nams){
+    console.log("this is armstrong");
+}
+else{
+    console.log("this is not armstrong");
+}
