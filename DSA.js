@@ -368,8 +368,23 @@ while(cubic>0){
     cubic = Math.floor(cubic/10);
 }
 if(suum===nams){
-    console.log("this is armstrong");
+    console.log("this is armstrong");// e.g 153 is armstong = 1^3+ 5^3+3^3 = 153  OUTPUT
 }
 else{
-    console.log("this is not armstrong");
+    console.log("this is not armstrong");   //121 is not armstrong = 1^3+2^3+1^3 = 10 OUTPUT
+}
+//  Check if a number is Perfect Number (sum of divisors = number).
+let sum_number = prompt("enter your choice number:");
+let saum = 0;
+
+for(i=1; i<sum_number; i++){
+    if(sum_number%i===0){
+        saum+=i;
+    }
+}
+if(saum==sum_number){
+    console.log( sum_number,"this is perfect", saum); //if we put 28 there output is 28
+}
+else{
+    console.log("THIS  IS NOY perfect");
 }
